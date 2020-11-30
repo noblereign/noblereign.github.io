@@ -15,10 +15,21 @@ let phrases = [
 	"Ugh, not again.",
 	"Stuck in limbo.",
 	"At least for now.",
-	"Are you gonna cry?",
+	"Kind of sad, really.",
 	"Welcome to Narnia.",
 	"No wolves here.",
 	"Fiddlesticks.",
+	"Oopsie woopsie.",
+	"Simulation halted.",
+	"Nobody liked that.",
+	"Physical pain.",
+	"Something's off.",
+	"Next, we cry.",
+	"Please ask nicely.",
+	"And then, the cookie crumbles.",
+	"It's the thought that counts.",
+	"Too bad, so sad.",
+	"Lost track of the scent.",
 ];
 let phrase = phrases[Math.floor(Math.random() * phrases.length)];
 document.getElementById("splash").innerHTML = phrase + "<br>";
