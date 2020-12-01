@@ -48,6 +48,8 @@ html body div#tlkio{
 
 #tlkio > iframe{
 	position: absolute;
+	top:0;
+	bottom:0;
 }
 
 /* ----------------------------------------------
