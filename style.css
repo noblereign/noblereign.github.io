@@ -36,13 +36,13 @@ footer {
 	margin-right: -50%;
 	bottom: 0px;
 	padding:0px;
-	font-size: xx-large;
+	font-size: 2rem;
 	-webkit-animation: fade-in-bottom .4s cubic-bezier(.23,1.000,.32,1.000) both;
 	animation: fade-in-bottom .4s cubic-bezier(.23,1.000,.32,1.000) both
 }
 
 a {
-	font-size: 250%
+	font-size: 2.5rem
 }
 
 /* ----------------------------------------------
