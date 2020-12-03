@@ -38,6 +38,8 @@ function loadGames() {
 				
 				const description = document.createElement('p');
 				
+				const buttonHolder = document.createElement('div');
+				buttonHolder.setAttribute('id', "buttonHolder");
 
 				const playButton = document.createElement('button');
 				playButton.setAttribute('id', "play");
@@ -87,8 +89,9 @@ function loadGames() {
 				cardBase.appendChild(backgroundImg);
 				content.appendChild(title);
 				content.appendChild(description);
-				content.appendChild(playButton);
-				content.appendChild(moreButton);
+				buttonHolder.appendChild(playButton);
+				buttonHolder.appendChild(moreButton);
+				content.appendChild(buttonHolder);
 				cardBase.appendChild(content);
 				imagesContainer.appendChild(cardBase);
 			});
