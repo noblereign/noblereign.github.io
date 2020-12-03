@@ -57,8 +57,8 @@ function loadGames() {
 					for (var i = 0, len = lines.length; i < len; i++) {
 						if (i === 0) { //ID
 							backgroundImg.style.backgroundImage = "https://www.roblox.com/asset-thumbnail/image?assetId=" + lines[i] + "&width=768&height=432&format=png";
-							playButton.setAttribute('onclick', "location.href='roblox://" + lines[i] + "'");
-							moreButton.setAttribute('onclick', "location.href='rblx.games/" + lines[i] + "'");
+							playButton.setAttribute('onclick', "location.href='roblox://" + lines[i] + "' return false;");
+							moreButton.setAttribute('onclick', "location.href='rblx.games/" + lines[i] + "' return false;");
 							console.log("ID");
 						} else if (i === 1) { //Title
 							title.innerHTML = lines[i];
