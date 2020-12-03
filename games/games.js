@@ -23,7 +23,7 @@ function loadGames() {
 				})
 				.filter(f => f); // Remove empty lines
 
-			const imagesContainer = document.getElementById('grid-container');
+			const imagesContainer = document.getElementById('contain');
 
 			filePaths.map(f => { // Create and put images to the DOM
 				let artistName = f.replace('https://www.glacier.dog//games/cards/', '').split('/')[0];
