@@ -18,7 +18,7 @@ function loadGames() {
 							filePath = `${location.href}${currentFolder}${f}`;
 						}
 					}
-
+					filePath = filePath.replace('/games//games/cards/', '/games/cards/');
 					return filePath;
 				})
 				.filter(f => f); // Remove empty lines
@@ -31,14 +31,13 @@ function loadGames() {
 				cardBase.setAttribute('class', "card");
 				const backgroundImg = document.createElement('div');
 				backgroundImg.setAttribute('class', "bg-img");
-				cardBase.appendChild(backgroundImg);
 				const content = document.createElement('div');
 				content.setAttribute('class', "content");
-				cardBase.appendChild(content);
+				
 				const title = document.createElement('h4');
-				content.appendChild(title);
+				
 				const description = document.createElement('p');
-				content.appendChild(description);
+				
 
 				const playButton = document.createElement('button');
 				playButton.setAttribute('id', "play");
@@ -47,11 +46,10 @@ function loadGames() {
 				playIcon.setAttribute('class', "fas fa-play");
 				playButton.appendChild(playIcon);
 
-				content.appendChild(playButton);
+				
 				const moreButton = document.createElement('button');
 				moreButton.setAttribute('id', "more");
 				moreButton.innerHTML = "View on Roblox";
-				content.appendChild(moreButton);
 
 				$.get(f, function(myContentFile) {
 					var lines = myContentFile.split("\r\n");
@@ -74,7 +72,18 @@ function loadGames() {
 						console.log("line " + i + " :" + lines[i]);
 					}
 				}, 'text');
-
+				
+				
+				
+				
+				
+				
+				cardBase.appendChild(backgroundImg);
+				content.appendChild(title);
+				content.appendChild(description);
+				content.appendChild(playButton);
+				content.appendChild(moreButton);
+				cardBase.appendChild(content);
 				imagesContainer.appendChild(cardBase);
 			});
 		}
