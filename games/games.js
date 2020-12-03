@@ -80,7 +80,7 @@ function loadGames() {
 		}
 	};
 
-	xhttp.open("GET", "images.txt", true);
+	xhttp.open("GET", "gamedir.txt", true);
 	xhttp.send();
 }
 

@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2 # Checkout repo
       - shell: bash
-        run: ls -Rpm1 ./games/cards/ > gamedir.txt # Saving file list into a file
+        run: ls -Rpm1 ./games/cards/ > ./games/gamedir.txt # Saving file list into a file
       - name: Save changes
         uses: actions-go/push@v1 # pushing the changes to the repo
         with:
