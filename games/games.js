@@ -49,7 +49,8 @@ function loadGames() {
 				
 				const moreButton = document.createElement('button');
 				moreButton.setAttribute('id', "more");
-				moreButton.innerHTML = "View on Roblox";
+				const txtMore = document.createTextNode("View on Roblox");
+				moreButton.appendChild(txtMore);
 
 				$.get(f, function(myContentFile) {
 					var lines = myContentFile.split("\n");
@@ -57,14 +58,16 @@ function loadGames() {
 					for (var i = 0, len = lines.length; i < len; i++) {
 						if (i === 0) { //ID
 							backgroundImg.style.backgroundImage = "https://www.roblox.com/asset-thumbnail/image?assetId=" + lines[i] + "&width=768&height=432&format=png";
-						playButton.setAttribute('onclick', "function click(e){ e.preventDefault(); location.href='roblox://" + lines[i] + "'; return false; }");
+							playButton.setAttribute('onclick', "function click(e){ e.preventDefault(); location.href='roblox://" + lines[i] + "'; return false; }");
 							moreButton.setAttribute('onclick', "function click(e){ e.preventDefault(); location.href='rblx.games/" + lines[i] + "' return false; }");
 							console.log("ID");
 						} else if (i === 1) { //Title
-							title.innerHTML = lines[i];
+							const txt = document.createTextNode(lines[i]);
+							title.appendChild(txt);
 							console.log("Title");
 						} else { //Description
-							content.innerHTML = lines[i];
+							const txt = document.createTextNode(lines[i]);
+							content.appendChild(txt);
 							console.log("Description");
 						}
 						//here your code
