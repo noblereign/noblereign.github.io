@@ -52,17 +52,20 @@ function loadGames() {
 				moreButton.innerHTML = "View on Roblox";
 
 				$.get(f, function(myContentFile) {
-					var lines = myContentFile.split("\r\n");
+					var lines = myContentFile.split("\n");
 
-					for (var i in lines) {
+					for (var i = 0, len = lines.length; i < len; i++) {
 						if (i === 0) { //ID
 							backgroundImg.style.backgroundImage = "https://www.roblox.com/asset-thumbnail/image?assetId=" + lines[i] + "&width=768&height=432&format=png";
 							playButton.setAttribute('onclick', "location.href='roblox://" + lines[i] + "'");
 							moreButton.setAttribute('onclick', "location.href='rblx.games/" + lines[i] + "'");
+							console.log("ID");
 						} else if (i === 1) { //Title
 							title.innerHTML = lines[i];
+							console.log("Title");
 						} else { //Description
 							content.innerHTML = lines[i];
+							console.log("Description");
 						}
 						//here your code
 						//each line is "lines[i]"
