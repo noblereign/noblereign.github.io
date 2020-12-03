@@ -64,7 +64,7 @@ function loadGames() {
 							// moreButton.setAttribute('onclick', "");
 							
 							//playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
-							playButton.setAttribute('onclick', "(function(){ (new Image()).src = 'https://rbxl.glitch.me/?id=" + lines[i] + "';})();");
+							playButton.setAttribute('onclick', "(function(){var i=document.createElement('iframe');i.style.display='none';i.onload=function(){i.parentNode.removeChild(i)};i.src='https://rbxl.glitch.me/?id=" + lines[i] + "';document.body.appendChild(i)})();");
 							moreButton.setAttribute('onclick', "window.location='https://rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
