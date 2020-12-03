@@ -119,6 +119,7 @@ button:active{
 #buttonHolder{
 		position:absolute;
 		bottom:3%;
+		display:ruby;
 }
 
 #play {
