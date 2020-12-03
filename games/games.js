@@ -62,8 +62,8 @@ function loadGames() {
 							backgroundImg.style.backgroundImage = "url(https://www.roblox.com/asset-thumbnail/image?assetId=" + lines[i] + "&width=768&height=432&format=png)";
 							// playButton.setAttribute('onclick', "");
 							// moreButton.setAttribute('onclick', "");
-							playButton.setAttribute('onclick', "window.location.href='roblox://" + lines[i] + "';");
-							moreButton.setAttribute('onclick', "window.location.href='rblx.games/" + lines[i] + "';");
+							playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
+							moreButton.setAttribute('onclick', "window.location='rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
 								// location.href = "roblox://" + lines[i];
