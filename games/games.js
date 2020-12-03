@@ -63,7 +63,7 @@ function loadGames() {
 							// playButton.setAttribute('onclick', "");
 							// moreButton.setAttribute('onclick', "");
 							playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
-							moreButton.setAttribute('onclick', "window.location='rblx.games/" + lines[i] + "';");
+							moreButton.setAttribute('onclick', "window.location='https://rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
 								// location.href = "roblox://" + lines[i];
