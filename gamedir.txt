@@ -1,0 +1,6 @@
+./games/cards/:
+bussim.txt
+faith.txt
+kitbattle.txt
+minibus.txt
+piza.txt
