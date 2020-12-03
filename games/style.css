@@ -116,6 +116,11 @@ button:active{
 	box-shadow: none;
 }
 
+#buttonHolder{
+		position:absolute;
+		bottom:3%;
+}
+
 #play {
 	background: #47ef47;
 	color: black;
@@ -123,6 +128,7 @@ button:active{
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #219e2f;
 	border-color: #108300;
+	margin-right: 2%;
 }
 
 #play:active {
