@@ -64,7 +64,7 @@ function loadGames() {
 							// moreButton.setAttribute('onclick', "");
 							
 							//playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
-							playButton.setAttribute('onclick', "window.location.replace(`roblox-player://1+launchmode:play+gameinfo:AAAAAA+launchtime:${(new Date()).getTime()}+placelauncherurl:https%3A%2F%2Fassetgame.roblox.com/game/PlaceLauncher.ashx?request=RequestGame&placeId=$" + lines[i] + "&isPlayTogetherGame=false+robloxLocale:en_us+gameLocale:en_us+channel:`)");
+							playButton.setAttribute('onclick', "window.location.replace(`roblox-player://1+launchmode:play+gameinfo:AAAAAA+launchtime:${(new Date()).getTime()}+placelauncherurl:https%3A%2F%2Fassetgame.roblox.com/game/PlaceLauncher.ashx?request=RequestGame&placeId=" + lines[i] + "&isPlayTogetherGame=false+robloxLocale:en_us+gameLocale:en_us+channel:`)");
 							moreButton.setAttribute('onclick', "window.location='https://rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
