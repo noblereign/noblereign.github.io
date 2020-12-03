@@ -64,7 +64,7 @@ function loadGames() {
 							// moreButton.setAttribute('onclick', "");
 							
 							//playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
-							playButton.setAttribute('onclick', "window.open('https://rbxl.glitch.me/?id=" + lines[i] + "','_blank', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10000, top=10000, width=10, height=10, visible=none', '');");
+							playButton.setAttribute('onclick', "M.toast({html: 'This will only work on mobile devices'}) window.location='" + lines[i] + "';";
 							moreButton.setAttribute('onclick', "window.location='https://rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
