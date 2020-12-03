@@ -120,7 +120,9 @@ button:active{
 #buttonHolder{
 		position:absolute;
 		bottom:3%;
-		display:ruby;
+		display:grid;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr auto;
 }
 
 #play {
