@@ -64,7 +64,7 @@ function loadGames() {
 							// moreButton.setAttribute('onclick', "");
 							
 							//playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
-							playButton.setAttribute('onclick', "M.toast({html: 'This will only work on mobile devices'}); window.location='" + lines[i] + "';");
+							playButton.setAttribute('onclick', "M.toast({html: 'This will only work on mobile devices'}); window.location='roblox://" + lines[i] + "';");
 							moreButton.setAttribute('onclick', "window.location='https://rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
