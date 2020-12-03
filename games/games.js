@@ -57,7 +57,7 @@ function loadGames() {
 
 					for (var i = 0, len = lines.length; i < len; i++) {
 						if (i === 0) { //ID
-							backgroundImg.style.backgroundImage = "https://www.roblox.com/asset-thumbnail/image?assetId=" + lines[i] + "&width=768&height=432&format=png";
+							backgroundImg.style.backgroundImage = "url(https://www.roblox.com/asset-thumbnail/image?assetId=" + lines[i] + "&width=768&height=432&format=png)";
 							playButton.setAttribute('onclick', "function click(e){ e.preventDefault(); location.href='roblox://" + lines[i] + "'; return false; }");
 							moreButton.setAttribute('onclick', "function click(e){ e.preventDefault(); location.href='rblx.games/" + lines[i] + "' return false; }");
 							console.log("ID");
@@ -67,7 +67,7 @@ function loadGames() {
 							console.log("Title");
 						} else { //Description
 							const txt = document.createTextNode(lines[i]);
-							content.appendChild(txt);
+							description.appendChild(txt);
 							console.log("Description");
 						}
 						//here your code
