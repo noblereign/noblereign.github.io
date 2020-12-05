@@ -1,0 +1,34 @@
+html {
+	font-family: 'Roboto', sans-serif;
+	background-color: #000000;
+	color: #e8e6e3;
+	height: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p{
+	font-size: 4pc;
+	text-align: center;
+	text-shadow: 0 0 .2pc #FFFFFF;
+}
+
+a{
+	text-shadow: 0 0 0 #000000;
+}
+
+html {
+  /* The image used */
+  background-image: url("notfound.png");
+
+  /* Full height */
+  height: 100%;
+  margin: 0;
+  
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  
+  /* Center and scale the image nicely */
+
+}
