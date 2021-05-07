@@ -64,7 +64,8 @@ function loadGames() {
 							// moreButton.setAttribute('onclick', "");
 							
 							//playButton.setAttribute('onclick', "window.location='roblox://" + lines[i] + "';");
-							playButton.setAttribute('onclick', "M.toast({html: 'This only works on Android devices.'}); window.location='roblox://" + lines[i] + "';");
+							//window.location='roblox://"
+							playButton.setAttribute('onclick', "M.toast({html: 'This only works on mobile devices.'}); window.location='https://www.roblox.com/games/start?placeid=" + lines[i] + "';");
 							moreButton.setAttribute('onclick', "window.location='https://rblx.games/" + lines[i] + "';");
 							// $(playButton).click(function () {
 								// // custom handling here
