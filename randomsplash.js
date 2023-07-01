@@ -21,7 +21,6 @@ let phrases = [
 	"press f5",
 	"when you're ready, click the games button",
 	"oh my goodness gracious",
-	"gg jenshin",
 	"non fungible personality",
 	"glacier dog",
 	"you left your house unanchored",
@@ -35,6 +34,12 @@ let phrases = [
 	"who dares enter my fine establishment",
 	"wear a mask",
 	"please get vaccinated",
+	"social media really goin downhill nowadays huh",
+	"the one and only",
+	"woof awroo woof woof woof",
+	"its like a dog but from the forest",
+	"whuhh??",
+	"you havin a good day?",
 ];
 let phrase = phrases[Math.floor(Math.random() * phrases.length)];
 document.getElementById("splash").innerHTML = phrase + "<br>";
